@@ -1,0 +1,33 @@
+header {
+  /*Dimensions*/
+  height: 68px;
+  width: 100%;
+
+  /*Flex*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  /*Dimensions*/
+  height: 100%;
+}
+
+.hd-btn-ctn {
+  /*Flex*/
+  display: flex;
+  gap: 57px;
+}
+
+@media (max-width: 800px) {
+  header {
+    /*Dimensions*/
+    height: 47px;
+  }
+
+  .hd-btn-ctn {
+    /*Flex*/
+    gap: 26px;
+  }
+}

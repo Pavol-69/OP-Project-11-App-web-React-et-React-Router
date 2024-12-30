@@ -1,0 +1,22 @@
+.link {
+  /*Texte*/
+  font-size: 24px;
+
+  /*Style*/
+  text-decoration: none;
+  color: var(--blk);
+  cursor: pointer;
+}
+
+.link:hover {
+  /*Style*/
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .link {
+    /*Texte*/
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
