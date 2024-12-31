@@ -1,0 +1,28 @@
+@use "../variables.scss" as *;
+
+.main-ctn {
+  /*Flex*/
+  justify-content: start;
+  gap: 139px;
+}
+
+.error {
+  /*Texte*/
+  color: $prm;
+  &-nb {
+    font-size: 288px;
+    font-weight: 700;
+  }
+  &-msg {
+    font-size: 36px;
+    font-weight: 500;
+  }
+}
+
+.hp-link {
+  /*Texte*/
+  color: $blk;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+}
