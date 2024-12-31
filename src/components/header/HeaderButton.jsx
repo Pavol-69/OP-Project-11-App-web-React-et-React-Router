@@ -1,6 +1,6 @@
 // CSS
 import "../../style/generalCSS.scss";
-import "../../style/components/HeaderButton.scss";
+import "../../style/components/header/HeaderButton.scss";
 
 // Autre
 import { Link } from "react-router-dom";

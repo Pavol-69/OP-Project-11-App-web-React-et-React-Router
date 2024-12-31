@@ -1,10 +1,12 @@
+@use "../../variables.scss" as *;
+
 .link {
   /*Texte*/
   font-size: 24px;
 
   /*Style*/
   text-decoration: none;
-  color: var(--blk);
+  color: $blk;
   cursor: pointer;
 }
 
@@ -13,7 +15,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media (max-width: $mobile-size) {
   .link {
     /*Texte*/
     font-size: 12px;

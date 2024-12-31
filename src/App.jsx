@@ -19,7 +19,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/logement" element={<LogementPage />} />
+          <Route path="/logement/:log_id" element={<LogementPage />} />
           <Route path="/a-propos" element={<AProposPage />} />
           <Route path="/erreur" element={<ErrorPage />} />
           <Route path="*" element={<Navigate to="/erreur" replace />} />

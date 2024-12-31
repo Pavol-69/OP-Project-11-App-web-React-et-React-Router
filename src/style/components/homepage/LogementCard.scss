@@ -1,0 +1,59 @@
+@use "../../variables.scss" as *;
+
+.log-card {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  width: 340px;
+  height: 340px;
+
+  /*Style*/
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.log-card img {
+  object-fit: contain;
+}
+
+.log-card .voile {
+  /*Position*/
+  position: absolute;
+
+  /*Dimension*/
+  width: 100%;
+  height: 100%;
+
+  /*Style*/
+  background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(10, 10, 10, 0),
+    rgba(4, 4, 4, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.log-card h2 {
+  /*Position*/
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  /*Dimensions*/
+  height: 52px;
+
+  /*Style*/
+  text-decoration: none;
+  color: $wht;
+  font-size: 18px;
+}
+
+@media (max-width: $mobile-size) {
+  .log-card {
+    /*Dimensions*/
+    height: 255px;
+    width: 100%;
+  }
+}

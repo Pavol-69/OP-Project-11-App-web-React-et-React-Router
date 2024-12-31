@@ -1,3 +1,5 @@
+@use "../../variables.scss" as *;
+
 header {
   /*Dimensions*/
   height: 68px;
@@ -20,7 +22,7 @@ header img {
   gap: 57px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: $mobile-size) {
   header {
     /*Dimensions*/
     height: 47px;

@@ -1,12 +1,8 @@
-$mobile-size: 800px;
+@use "./variables.scss" as *;
 
-* {
-  /*Couleurs*/
-  --prm: rgba(255, 96, 96, 1);
-  --wht: rgba(255, 255, 255, 1);
-  --lgt-gry: rgba(246, 246, 246, 1);
-  --blk: rgba(0, 0, 0, 1);
-  --toto: 800px;
+h1 h2 {
+  /*Dimensions*/
+  margin: 0;
 }
 
 .main-ctn {
@@ -17,7 +13,7 @@ $mobile-size: 800px;
   /*Dimensions*/
   width: 100%;
   max-width: 1440px;
-  min-width: 335px;
+  min-width: 375px;
   min-height: 100%;
   box-sizing: border-box;
 
@@ -33,7 +29,17 @@ $mobile-size: 800px;
   align-items: center;
 }
 
-@media (max-width: 800px) {
+.ver {
+  /*Flex*/
+  flex-direction: column;
+}
+
+.hor {
+  /*Flex*/
+  flex-direction: row;
+}
+
+@media (max-width: $mobile-size) {
   .main-ctn {
     /*Position*/
     position: relative;

@@ -1,0 +1,22 @@
+@use "../variables.scss" as *;
+
+.main-ctn {
+  /*Flex*/
+  justify-content: start;
+  gap: 50px;
+}
+
+.HP-content {
+  /*Dimensions*/
+  width: 100%;
+
+  /*Flex*/
+  gap: 45px;
+}
+
+@media (max-width: $mobile-size) {
+  .main-ctn {
+    /*Flex*/
+    gap: 27px;
+  }
+}

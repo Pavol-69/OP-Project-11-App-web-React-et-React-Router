@@ -1,3 +1,5 @@
+@use "../variables.scss" as *;
+
 footer {
   /*Position*/
   position: absolute;
@@ -8,8 +10,8 @@ footer {
   width: 100%;
 
   /*Style*/
-  background-color: var(--blk);
-  color: var(--wht);
+  background-color: $blk;
+  color: $wht;
 }
 
 footer img {
@@ -39,7 +41,7 @@ footer span {
   align-items: flex-end;
 }
 
-@media (max-width: 800px) {
+@media (max-width: $mobile-size) {
   footer span {
     /*Position*/
     top: 105px;
