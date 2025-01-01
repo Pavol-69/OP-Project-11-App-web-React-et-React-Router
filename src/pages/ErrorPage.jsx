@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function ErrorPage() {
   return (
     <>
-      <div className="main-ctn elm-ct ver">
+      <div className="main-ctn main-ctn-error elm-ct ver">
         <Header />
         <span className="error error-nb">404</span>
         <span className="error error-msg">

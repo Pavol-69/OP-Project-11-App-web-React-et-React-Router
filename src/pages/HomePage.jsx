@@ -10,7 +10,7 @@ import "../style/pages/HomePage.scss";
 function HomePage() {
   return (
     <>
-      <div className="elm-ct ver main-ctn">
+      <div className="elm-ct ver main-ctn main-ctn-hp">
         <Header />
         <div className="HP-content elm-ct ver">
           <BandeauHP />

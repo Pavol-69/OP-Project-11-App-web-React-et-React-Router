@@ -5,7 +5,7 @@ header {
   height: 68px;
   width: 100%;
 
-  /*Flex*/
+  /*Display*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@ header img {
 }
 
 .hd-btn-ctn {
-  /*Flex*/
+  /*Display*/
   display: flex;
   gap: 57px;
 }
@@ -29,7 +29,7 @@ header img {
   }
 
   .hd-btn-ctn {
-    /*Flex*/
+    /*Display*/
     gap: 26px;
   }
 }

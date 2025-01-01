@@ -10,9 +10,11 @@
   background-color: $lgt-gry;
   border-radius: 25px;
 
-  /*Flex*/
-  flex-wrap: wrap;
-  gap: 45px;
+  /*Display*/
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  row-gap: 45px;
+  column-gap: 60px;
 }
 
 @media (max-width: $mobile-size) {
@@ -22,5 +24,8 @@
 
     /*Style*/
     background-color: $wht;
+
+    /*Display*/
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
 }

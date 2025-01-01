@@ -17,25 +17,25 @@ h1 h2 {
   min-height: 100%;
   box-sizing: border-box;
 
-  /*Flex*/
+  /*Display*/
   display: flex;
   justify-content: center;
 }
 
 .elm-ct {
-  /*Flex*/
+  /*Display*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .ver {
-  /*Flex*/
+  /*Display*/
   flex-direction: column;
 }
 
 .hor {
-  /*Flex*/
+  /*Display*/
   flex-direction: row;
 }
 
