@@ -1,0 +1,92 @@
+@use "../../variables.scss" as *;
+
+.carrousel {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  height: 415px;
+  width: 100%;
+
+  /*Style*/
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.pic-ctn {
+  /*Position*/
+  position: absolute;
+
+  /*Dimensions*/
+  height: 100%;
+  width: 100%;
+}
+
+.picture {
+  /*Dimensions*/
+  min-height: 100%;
+  min-width: 100%;
+
+  /*Image*/
+  object-fit: cover;
+}
+
+.arrow {
+  /*Position*/
+  position: absolute;
+
+  /*Dimensions*/
+  height: 79px;
+
+  /*Style*/
+  cursor: pointer;
+
+  &-left {
+    /*Position*/
+    left: 20px;
+  }
+
+  &-right {
+    /*Position*/
+    right: 20px;
+  }
+}
+
+.carrousel span {
+  /*Position*/
+  position: absolute;
+  bottom: 20px;
+
+  /*Texte*/
+  font-size: 18px;
+  color: $wht;
+}
+
+@media (max-width: $mobile-size) {
+  .carrousel {
+    /*Dimensions*/
+    height: 255px;
+
+    /*Style*/
+    border-radius: 10px;
+  }
+
+  .arrow {
+    /*Dimensions*/
+    height: 20px;
+
+    &-left {
+      /*Position*/
+      left: 5px;
+    }
+
+    &-right {
+      /*Position*/
+      right: 5px;
+    }
+  }
+
+  .carrousel span {
+    display: none;
+  }
+}

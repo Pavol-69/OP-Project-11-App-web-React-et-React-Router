@@ -5,6 +5,7 @@ import BandeauHP from "../components/homepage/BandeauHP";
 import LogementContainer from "../components/homepage/LogementContainer";
 
 // Style
+import "../style/generalCSS.scss";
 import "../style/pages/HomePage.scss";
 
 function HomePage() {
