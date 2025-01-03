@@ -1,8 +1,11 @@
 // Components
 import Header from "../components/header/Header";
 import Footer from "../components/Footer";
-import BandeauHP from "../components/homepage/BandeauHP";
+import Bandeau from "../components/Bandeau";
 import LogementContainer from "../components/homepage/LogementContainer";
+
+// Data
+import bandeau from "../assets/bandeau-homepage.png";
 
 // Style
 import "../style/generalCSS.scss";
@@ -14,7 +17,11 @@ function HomePage() {
       <div className="elm-ct ver main-ctn main-ctn-hp">
         <Header />
         <div className="HP-content elm-ct ver">
-          <BandeauHP />
+          <Bandeau
+            text={"Chez vous, partout et ailleurs"}
+            bandeau={bandeau}
+            opacity={0.6}
+          />
           <LogementContainer />
         </div>
       </div>
