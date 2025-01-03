@@ -2,6 +2,11 @@
 import Header from "../components/header/Header";
 import Footer from "../components/Footer";
 import Carrousel from "../components/logementpage/Carrousel";
+import TitleLogement from "../components/logementpage/TitleLogement";
+import TagsLogement from "../components/logementpage/TagsLogement";
+import HostLogement from "../components/logementpage/HostLogement";
+import RatingLogement from "../components/logementpage/RatingLogement";
+import Collapse from "../components/Collapse";
 
 // Style
 import "../style/generalCSS.scss";
@@ -38,8 +43,22 @@ function LogementPage() {
     <>
       <div className="main-ctn main-ctn-log ver">
         <Header />
-        <div className="log-content">
+        <div className="log-content ver">
           <Carrousel pic={log.pictures} />
+          <div className="details-ctn hor">
+            <div className="title-tag-ctn ver">
+              <TitleLogement title={log.title} location={log.location} />
+              <TagsLogement tags={log.tags} />
+            </div>
+            <div className="owner-rate-ctn ver">
+              <HostLogement host={log.host} />
+              <RatingLogement rating={log.rating} />
+            </div>
+          </div>
+          <div className="collapses-ctn">
+            <Collapse title={"Description"} content={log.description} />
+            <Collapse title={"Equipement"} content={log.equipments} />
+          </div>
         </div>
       </div>
       <Footer />

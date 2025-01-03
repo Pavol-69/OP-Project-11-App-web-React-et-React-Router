@@ -4,3 +4,53 @@
   /*Display*/
   gap: 50px;
 }
+
+.log-content {
+  /*Display*/
+  display: flex;
+  gap: 30px;
+}
+
+.details-ctn {
+  /*Display*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-tag-ctn {
+  /*Display*/
+  display: flex;
+  gap: 20px;
+}
+
+.owner-rate-ctn {
+  /*Display*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapses-ctn {
+  /*Display*/
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  column-gap: 76px;
+  row-gap: 30px;
+}
+
+@media (max-width: $mobile-size) {
+  .details-ctn {
+    /*Display*/
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .title-tag-ctn {
+    /*Display*/
+    gap: 10px;
+  }
+
+  .owner-rate-ctn {
+    /*Display*/
+    flex-direction: row-reverse;
+  }
+}
