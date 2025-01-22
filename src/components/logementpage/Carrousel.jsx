@@ -26,9 +26,10 @@ function Carrousel({ pic }) {
   // => Il y en a une qu'on veut cacher, celle qui passe de l'autre côté du Carrousel
   const [opa, setOpa] = useState([]);
   const [trans, setTrans] = useState([]);
+  const [isRunning, setIsRunning] = useState(false); // Indique si l'animation du Carrousel tourne ou pas
 
-  // Valeur temps transition
-  const transVal = 0.2;
+  // Valeur temps transition, en seconde
+  const transVal = 1;
 
   useEffect(() => {
     setIndCar([pic.length - 1, 0, 1]);
@@ -39,6 +40,13 @@ function Carrousel({ pic }) {
 
   // Fonction qui fait tourner le Carrousel
   function moveCarrousel(dir) {
+    if (isRunning) {
+      return;
+    }
+
+    // On indique que l'animation tourne pour ne pas relancer la fonction le temps qu'elle se termine
+    setIsRunning(true);
+
     // Récupération des variables
     let posTemp = pos;
     let indTemp = indCar;
@@ -96,10 +104,13 @@ function Carrousel({ pic }) {
       opaTemp[i] = 1;
       transTemp[i] = trans;
     }
+
+    // On remet les variables à la bonne valeur une fois l'animation terminée
     setTimeout(() => {
       setOpa([...opaTemp]);
       setTrans([...transTemp]);
-    }, trans * 1000);
+      setIsRunning(false);
+    }, transVal * 1000);
   }
 
   return (
