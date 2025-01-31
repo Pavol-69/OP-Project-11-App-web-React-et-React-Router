@@ -1,6 +1,9 @@
 @use "../variables.scss" as *;
 
 .main-ctn-log {
+  /*Dimensions*/
+  box-sizing: border-box;
+
   /*Display*/
   gap: 50px;
 }
@@ -27,6 +30,7 @@
   /*Display*/
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .collapses-ctn {
@@ -52,5 +56,11 @@
   .owner-rate-ctn {
     /*Display*/
     flex-direction: row-reverse;
+  }
+
+  .collapses-ctn {
+    /*Display*/
+    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    row-gap: 20px;
   }
 }

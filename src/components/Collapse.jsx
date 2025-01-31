@@ -21,7 +21,6 @@ function Collapse({ title, content }) {
         className={`content-collapse${
           deploy ? " content-collapse-deploy" : ""
         }`}
-        style={{}}
       >
         {Array.isArray(content) ? (
           <ul>
