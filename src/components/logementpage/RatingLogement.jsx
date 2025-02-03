@@ -1,8 +1,5 @@
-// Style
 import "../../style/generalCSS.scss";
 import "../../style/components/logementpage/RatingLogement.scss";
-
-// Data
 import fullStart from "../../assets/full-star.svg";
 import emptyStart from "../../assets/empty-star.svg";
 

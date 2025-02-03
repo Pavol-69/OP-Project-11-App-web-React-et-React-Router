@@ -1,4 +1,3 @@
-// Components
 import Header from "../components/header/Header";
 import Footer from "../components/Footer";
 import Carrousel from "../components/logementpage/Carrousel";
@@ -7,21 +6,15 @@ import TagsLogement from "../components/logementpage/TagsLogement";
 import HostLogement from "../components/logementpage/HostLogement";
 import RatingLogement from "../components/logementpage/RatingLogement";
 import Collapse from "../components/Collapse";
-
-// Style
 import "../style/generalCSS.scss";
 import "../style/pages/LogementPage.scss";
-
-// Autres
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Navigate } from "react-router-dom";
-
-// Data
 import { logements } from "../database/logements";
 
 function LogementPage() {
-  const [log, setLog] = useState({ id: "tempo" }); // attribution d'un id temporaire afin de laisser le temps au useEffect de faire son oeuvre et de ne pas renvoyer vers la page d'erreur trop vite (useEffect = async function)
+  const [log, setLog] = useState({ id: "tempo" });
   const id = useParams().log_id;
 
   useEffect(() => {
@@ -34,15 +27,16 @@ function LogementPage() {
     }
   }, [id]);
 
-  // Si l'id ne correspond à rien, on renvoie vers la page erreur 404
+  // Si info pas encore chargées, on n'affiche rien
   return log.id == "tempo" ? (
     <></>
-  ) : !log.id ? (
+  ) : // Si l'id ne correspond à rien, on renvoie vers la page erreur 404
+  !log.id ? (
     <Navigate to="/erreur" replace />
   ) : (
     <>
       <div className="main-ctn main-ctn-log ver">
-        <Header />
+        <Header home={false} about={false} />
         <div className="log-content ver">
           <Carrousel pic={log.pictures} />
           <div className="details-ctn hor">

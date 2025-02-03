@@ -1,11 +1,6 @@
-// Style
 import "../../style/components/logementpage/Carrousel.scss";
-
-// Data
 import leftArrow from "../../assets/left-arrow.svg";
 import rightArrow from "../../assets/right-arrow.svg";
-
-// Autres
 import { useState, useEffect } from "react";
 
 function Carrousel({ pic }) {
@@ -38,7 +33,6 @@ function Carrousel({ pic }) {
     setTrans([transVal, transVal, transVal]);
   }, [pic]);
 
-  // Fonction qui fait tourner le Carrousel
   function moveCarrousel(dir) {
     if (isRunning) {
       return;
@@ -47,7 +41,6 @@ function Carrousel({ pic }) {
     // On indique que l'animation tourne pour ne pas relancer la fonction le temps qu'elle se termine
     setIsRunning(true);
 
-    // Récupération des variables
     let posTemp = pos;
     let indTemp = indCar;
     let opaTemp = opa;
@@ -56,7 +49,7 @@ function Carrousel({ pic }) {
     for (let i = 0; i < 3; i++) {
       // Màj de chacune des positions et de l'indice des photos à afficher selon la direction (+1 ou -1)
       posTemp[i] += dir * 100;
-    } // On doit faire cette boucle en amont pour être que toutes les valeurs ont bien été mise à jour
+    }
 
     for (let i = 0; i < 3; i++) {
       // Quand la position est à +/- 200%
@@ -83,7 +76,6 @@ function Carrousel({ pic }) {
         opaTemp[i] = 0;
         transTemp[i] = 0;
       } else {
-        // Sinon, les éléments sont bien visibles
         opaTemp[i] = 1;
         transTemp[i] = transVal;
       }
@@ -99,13 +91,11 @@ function Carrousel({ pic }) {
     setOpa([...opaTemp]);
     setTrans([...transTemp]);
 
-    // une fois l'animation finie, on remet les valeurs à 0
     for (let i = 0; i < 3; i++) {
       opaTemp[i] = 1;
       transTemp[i] = trans;
     }
 
-    // On remet les variables à la bonne valeur une fois l'animation terminée
     setTimeout(() => {
       setOpa([...opaTemp]);
       setTrans([...transTemp]);

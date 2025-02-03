@@ -1,19 +1,14 @@
-// Components
 import Header from "../components/header/Header";
 import Footer from "../components/Footer";
-
-// Style
 import "../style/generalCSS.scss";
 import "../style/pages/ErrorPage.scss";
-
-// Autre
 import { Link } from "react-router-dom";
 
 function ErrorPage() {
   return (
     <>
       <div className="main-ctn main-ctn-error elm-ct ver">
-        <Header />
+        <Header home={false} about={false} />
         <span className="error error-nb">404</span>
         <span className="error error-msg">
           {"Oups ! La page que vous demandez n'existe pas."}

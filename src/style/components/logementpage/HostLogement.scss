@@ -1,7 +1,6 @@
 @use "../../variables.scss" as *;
 
 .host-ctn {
-  /*Display*/
   display: flex;
   gap: 10px;
   justify-content: end;
@@ -9,53 +8,36 @@
 }
 
 .host-ctn h5 {
-  /*Dimensions*/
   height: 26px;
   width: 100%;
-
-  /*Texte*/
   font-size: 18px;
   font-weight: 500;
   color: $prm;
-
-  /*Display*/
   display: flex;
   justify-content: end;
 }
 
 .host-img-ctn {
-  /*Position*/
   position: relative;
-
-  /*Dimensions*/
   height: 64px;
   width: 64px;
-
-  /*Style*/
   border-radius: 50%;
   overflow: hidden;
 }
 
 .host-img-ctn img {
-  /*Dimensions*/
   min-height: 100%;
   min-width: 100%;
-
-  /*Image*/
   object-fit: cover;
 }
 
 @media (max-width: $mobile-size) {
   .host-ctn h5 {
-    /*Dimensions*/
     height: 16px;
-
-    /*Texte*/
     font-size: 12px;
   }
 
   .host-img-ctn {
-    /*Dimensions*/
     height: 32px;
     width: 32px;
   }

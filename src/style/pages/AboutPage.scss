@@ -1,23 +1,18 @@
 @use "../variables.scss" as *;
 
 .main-ctn-about {
-  /*Display*/
   align-items: center;
   gap: 50px;
 }
 
 .about-collapses-ctn {
-  /*Dimensions*/
   max-width: 1023px;
-
-  /*Display*/
   display: flex;
   gap: 50px;
 }
 
 @media (max-width: $mobile-size) {
   .about-collapses-ctn {
-    /*Display*/
     gap: 20px;
   }
 }

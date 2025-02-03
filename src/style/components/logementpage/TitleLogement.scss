@@ -1,52 +1,35 @@
 @use "../../variables.scss" as *;
 
 .title-log {
-  /*Dimensions*/
   min-height: 51px;
-
-  /*Texte*/
   font-size: 36px;
   font-weight: 500;
   color: $prm;
-
-  /*Display*/
   display: flex;
   align-items: center;
 }
 
 .loc-log {
-  /*Dimensions*/
   height: 26px;
-
-  /*Texte*/
   font-size: 18px;
   font-weight: 500;
   color: $blk;
-
-  /*Display*/
   display: flex;
   align-items: center;
 }
 
 .title-ctn {
-  /*Display*/
   display: flex;
 }
 
 @media (max-width: $mobile-size) {
   .title-log {
-    /*Dimensions*/
     min-height: 23px;
-
-    /*Texte*/
     font-size: 18px;
   }
 
   .loc-log {
-    /*Dimensions*/
     height: 22px;
-
-    /*Texte*/
     font-size: 14px;
   }
 }

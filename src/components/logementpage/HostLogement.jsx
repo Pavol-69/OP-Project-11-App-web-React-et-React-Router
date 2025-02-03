@@ -1,8 +1,5 @@
-// Style
 import "../../style/generalCSS.scss";
 import "../../style/components/logementpage/HostLogement.scss";
-
-// Autre
 import { useState, useEffect } from "react";
 
 function HostLogement({ host }) {

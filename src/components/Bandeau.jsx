@@ -1,4 +1,3 @@
-// CSS
 import "../style/generalCSS.scss";
 import "../style/components/Bandeau.scss";
 

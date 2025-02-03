@@ -1,23 +1,18 @@
 @use "../../variables.scss" as *;
 
 .link {
-  /*Texte*/
   font-size: 24px;
-
-  /*Style*/
   text-decoration: none;
   color: $blk;
   cursor: pointer;
 }
 
-.link:hover {
-  /*Style*/
+.underline {
   text-decoration: underline;
 }
 
 @media (max-width: $mobile-size) {
   .link {
-    /*Texte*/
     font-size: 12px;
     text-transform: uppercase;
   }

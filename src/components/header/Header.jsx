@@ -1,20 +1,15 @@
-// CSS
 import "../../style/generalCSS.scss";
 import "../../style/components/header/Header.scss";
-
-// Data
 import logo from "../../assets/logo-red.svg";
-
-// Components
 import HeaderButton from "./HeaderButton";
 
-function Header() {
+function Header({ home, about }) {
   return (
     <header>
       <img alt="Logo Header" src={logo} />
       <div className="hd-btn-ctn">
-        <HeaderButton name="Accueil" path="/" />
-        <HeaderButton name="A Propos" path="/a-propos" />
+        <HeaderButton name="Accueil" path="/" underline={home} />
+        <HeaderButton name="A Propos" path="/a-propos" underline={about} />
       </div>
     </header>
   );

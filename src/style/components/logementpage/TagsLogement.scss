@@ -1,24 +1,18 @@
 @use "../../variables.scss" as *;
 
 .tags-ctn {
-  /*Display*/
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
 .tag {
-  /*Dimensions*/
   min-width: 115px;
   height: 25px;
   padding: 0px 10px;
   box-sizing: border-box;
-
-  /*Style*/
   background-color: $prm;
   border-radius: 10px;
-
-  /*Texte*/
   font-size: 14px;
   font-weight: 700;
   color: $wht;
@@ -26,14 +20,9 @@
 
 @media (max-width: $mobile-size) {
   .tag {
-    /*Dimensions*/
     height: 18px;
     min-width: 84px;
-
-    /*Texte*/
     font-size: 10px;
-
-    /*Style*/
     background-color: $prm;
     border-radius: 5px;
   }

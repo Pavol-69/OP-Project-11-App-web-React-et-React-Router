@@ -1,11 +1,6 @@
-// Style
 import "../style/generalCSS.scss";
 import "../style/components/Collapse.scss";
-
-// Data
 import arrowCol from "../assets/arrow-collapse.svg";
-
-// Autre
 import { useState } from "react";
 
 function Collapse({ title, content }) {

@@ -1,16 +1,11 @@
 @use "../../variables.scss" as *;
 
 .log-ctn {
-  /*Dimensions*/
   width: 100%;
   padding: 50px;
   box-sizing: border-box;
-
-  /*Style*/
   background-color: $lgt-gry;
   border-radius: 25px;
-
-  /*Display*/
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   row-gap: 45px;
@@ -19,13 +14,8 @@
 
 @media (max-width: $mobile-size) {
   .log-ctn {
-    /*Dimensions*/
     padding: 0px;
-
-    /*Style*/
     background-color: $wht;
-
-    /*Display*/
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
 }

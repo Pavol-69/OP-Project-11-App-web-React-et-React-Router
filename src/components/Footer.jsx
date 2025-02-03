@@ -1,8 +1,5 @@
-// Style
 import "../style/components/footer.scss";
 import "../style/generalCSS.scss";
-
-// Data
 import logo from "../assets/logo-white.svg";
 
 function Footer() {

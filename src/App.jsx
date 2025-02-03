@@ -1,4 +1,3 @@
-// Imports
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -6,8 +5,6 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-
-// Components
 import HomePage from "./pages/HomePage";
 import AProposPage from "./pages/AboutPage";
 import LogementPage from "./pages/LogementPage";

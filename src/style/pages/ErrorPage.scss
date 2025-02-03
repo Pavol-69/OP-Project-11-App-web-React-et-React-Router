@@ -1,13 +1,11 @@
 @use "../variables.scss" as *;
 
 .main-ctn-error {
-  /*Display*/
   justify-content: start;
   gap: 139px;
 }
 
 .error {
-  /*Texte*/
   color: $prm;
   &-nb {
     font-size: 288px;
@@ -21,7 +19,6 @@
 }
 
 .hp-link {
-  /*Texte*/
   color: $blk;
   font-size: 18px;
   font-weight: 500;
@@ -30,12 +27,10 @@
 
 @media (max-width: $mobile-size) {
   .main-ctn-error {
-    /*Display*/
     gap: 113px;
   }
 
   .error {
-    /*Texte*/
     color: $prm;
     &-nb {
       font-size: 96px;
@@ -46,7 +41,6 @@
   }
 
   .hp-link {
-    /*Texte*/
     font-size: 14px;
   }
 }

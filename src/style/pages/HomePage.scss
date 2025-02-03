@@ -1,21 +1,16 @@
 @use "../variables.scss" as *;
 
 .main-ctn-hp {
-  /*Display*/
   gap: 50px;
 }
 
 .HP-content {
-  /*Dimensions*/
   width: 100%;
-
-  /*Display*/
   gap: 45px;
 }
 
 @media (max-width: $mobile-size) {
   .main-ctn {
-    /*Display*/
     gap: 27px;
   }
 }

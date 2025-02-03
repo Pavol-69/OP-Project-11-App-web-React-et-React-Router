@@ -1,8 +1,5 @@
-// CSS
 import "../../style/generalCSS.scss";
 import "../../style/components/homepage/LogementCard.scss";
-
-// Autre
 import { Link } from "react-router-dom";
 
 function LogementCard({ id, name, img }) {

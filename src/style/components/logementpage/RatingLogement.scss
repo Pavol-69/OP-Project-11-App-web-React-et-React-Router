@@ -1,32 +1,27 @@
 @use "../../variables.scss" as *;
 
 .rating-ctn {
-  /*Display*/
   display: flex;
   gap: 4px;
 }
 
 .star-ctn {
-  /*Dimensions*/
   width: 36px;
   height: 36px;
 }
 
 .star {
-  /*Dimensions*/
   width: 24px;
   height: 24px;
 }
 
 @media (max-width: $mobile-size) {
   .star-ctn {
-    /*Dimensions*/
     width: 18px;
     height: 18px;
   }
 
   .star {
-    /*Dimensions*/
     width: 13px;
     height: 13px;
   }

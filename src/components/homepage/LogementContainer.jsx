@@ -1,11 +1,6 @@
-// CSS
 import "../../style/generalCSS.scss";
 import "../../style/components/homepage/LogementContainer.scss";
-
-// Components
 import LogementCard from "./LogementCard";
-
-// Data
 import { logements } from "../../database/logements";
 
 function LogementContainer() {

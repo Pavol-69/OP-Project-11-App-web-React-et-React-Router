@@ -1,13 +1,10 @@
-// CSS
 import "../../style/generalCSS.scss";
 import "../../style/components/header/HeaderButton.scss";
-
-// Autre
 import { Link } from "react-router-dom";
 
-function HeaderButton({ name, path }) {
+function HeaderButton({ name, path, underline }) {
   return (
-    <Link className="link" to={path}>
+    <Link className={`link${underline ? " underline" : ""}`} to={path}>
       {name}
     </Link>
   );

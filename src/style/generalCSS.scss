@@ -6,47 +6,37 @@ h3,
 h4,
 h5,
 ul {
-  /*Dimensions*/
   margin: 0;
 }
 
 .main-ctn {
-  /*Position*/
   position: relative;
   padding: 45px 100px 50px;
-
-  /*Dimensions*/
   width: 100%;
   max-width: 1440px;
   min-width: 375px;
   min-height: 100%;
   box-sizing: border-box;
-
-  /*Display*/
   display: flex;
   justify-content: start;
 }
 
 .elm-ct {
-  /*Display*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .ver {
-  /*Display*/
   flex-direction: column;
 }
 
 .hor {
-  /*Display*/
   flex-direction: row;
 }
 
 @media (max-width: $mobile-size) {
   .main-ctn {
-    /*Position*/
     position: relative;
     padding: 20px;
   }

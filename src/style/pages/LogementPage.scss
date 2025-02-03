@@ -1,40 +1,32 @@
 @use "../variables.scss" as *;
 
 .main-ctn-log {
-  /*Dimensions*/
   box-sizing: border-box;
-
-  /*Display*/
   gap: 50px;
 }
 
 .log-content {
-  /*Display*/
   display: flex;
   gap: 30px;
 }
 
 .details-ctn {
-  /*Display*/
   display: flex;
   justify-content: space-between;
 }
 
 .title-tag-ctn {
-  /*Display*/
   display: flex;
   gap: 20px;
 }
 
 .owner-rate-ctn {
-  /*Display*/
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .collapses-ctn {
-  /*Display*/
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   column-gap: 76px;
@@ -43,23 +35,19 @@
 
 @media (max-width: $mobile-size) {
   .details-ctn {
-    /*Display*/
     flex-direction: column;
     gap: 16px;
   }
 
   .title-tag-ctn {
-    /*Display*/
     gap: 10px;
   }
 
   .owner-rate-ctn {
-    /*Display*/
     flex-direction: row-reverse;
   }
 
   .collapses-ctn {
-    /*Display*/
     grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
     row-gap: 20px;
   }
