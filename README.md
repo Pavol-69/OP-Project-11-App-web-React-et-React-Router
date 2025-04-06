@@ -1,3 +1,5 @@
 # Kasa
 
-command to launch this app : npm i && npm run dev
+commands to launch this app :
+1- npm i
+2- npm run dev
